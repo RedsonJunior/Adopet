@@ -1,0 +1,142 @@
+body {
+    background:url(../img/splash-1.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    color: var(--cinza);
+    background-size: 90vw;
+}
+
+.container__home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10vh; 
+}
+
+.texto__home {
+    margin: 0 4.5rem 2rem;
+    color: var(--azul);
+}
+
+.container__adocao {
+    width: 100%;
+}
+
+.cartao__adocao {
+    background-color: var(--cinza-claro-fundos);
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    margin-bottom: 1rem;
+}
+
+.texto__adocao {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.titulo__cartao {
+    color: var(--azul);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.descricao__pet {
+    line-height: 1.5em;
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+}
+
+.endereco__adocao {
+    font-size: 12px;
+    margin-bottom: 0.8em;
+}
+
+.contato__adocao {
+    font-size: 10px;
+    margin-left: 1em;
+}
+
+.cartao__adocao--ultimo {
+    margin-bottom: 0;
+}
+
+.logo__cabecalho {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-size: 70vw;
+    }
+
+    .texto__home {
+        font-size: 18px;
+    }
+
+    .ola__home {
+        display: block;
+    }
+
+    .container__adocao {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cartao__adocao {
+        width: 45%;
+        margin: 1%;
+    }
+
+    .cartao__adocao--ultimo {
+        margin-bottom: 2rem;
+        margin-right: auto;
+        margin-left: 4%;
+        margin: 1% auto 4% 4%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background: url(../img/splash-1.svg), url(../img/splash-2.svg);
+        background-size: 65vh, 12vh;
+        background-repeat: no-repeat;
+        background-position: top left, right 20vh;
+    }
+
+    .container__home {
+        margin: 3vh auto 5vh;
+    }
+
+    .texto__home {
+        font-size: 18px;
+    }
+
+    .ola__home {
+        display: inline;
+    }
+
+    .container__adocao {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cartao__adocao {
+        width: 26%;
+        margin: 0.5%;
+    }
+
+    .cartao__adocao--ultimo {
+        margin: 1%;
+    }
+}

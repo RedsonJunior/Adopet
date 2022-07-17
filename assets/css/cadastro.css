@@ -1,0 +1,76 @@
+body {
+    background:url(../img/patas.svg), url(../img/splash-1.svg), url(../img/splash-3.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top right, top left, left 90vw;
+    background-size: 35vw, 95vw, 10vh;
+    color: var(--azul);
+}
+
+.container__cadastro, .formulario__cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container__cadastro {
+    width: 90vw;
+    margin: 10vw auto 10vw;
+}
+
+.logo__cadastro {
+    margin-bottom: 1.5rem;
+    width: 9rem;
+}
+
+.formulario__cadastro {
+    margin: 2rem 1rem;
+    color: var(--cinza);
+}
+
+.logo__cabecalho {
+    display: none;
+}
+
+.texto__corpo--1 {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background:url(../img/patas.svg), url(../img/splash-1.svg), url(../img/splash-2.svg);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: top right, top left, right 30vw;
+        background-size: 20vw, 70vw, 11vh;
+    }
+
+    .container__cadastro {
+        margin: 12vw auto 15vh;
+        font-size: 18px;
+        line-height: 26px;
+        width: 70vw;
+
+    }
+
+    .logo__cadastro {
+        margin-bottom: 2.5rem;
+        width: 16rem;
+    }
+
+    .texto__corpo--1 {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-size: 15vw, 65vh, 11vh;
+        background-position: top right, top left, right 15vw;
+    }
+
+    .container__cadastro {
+        width: 36vw;
+        margin: 0 auto 15vh;
+    }
+
+}

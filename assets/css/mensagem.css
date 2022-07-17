@@ -1,0 +1,70 @@
+body {
+    background:url(../img/splash-1.svg);
+    background-repeat: no-repeat;
+    background-size: 90vw;
+    background-position: top left;
+    color: var(--cinza);
+}
+
+.container__mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 12vw 0 4vh;
+}
+
+.texto__mensagem {
+    margin: 0 4.5rem 1.5rem;
+    color: var(--azul);
+}
+
+.label__mensagem {
+    margin-top: 1rem;
+}
+
+.campo__mensagem {
+    height: 11rem;
+    resize: none;
+    font-family: var(--fonte-principal);
+}
+
+.botao__mensagem {
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.logo__cabecalho {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: url(../img/splash-1.svg), url(../img/splash-2.svg);
+        background-repeat: no-repeat;
+        background-position: top left, right 30vw;
+        background-size: 65vw, 11vh;
+    }
+
+    .container__mensagem {
+        margin: 12vw auto 15vh;
+        font-size: 18px;
+        line-height: 26px;
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-position: top left, right 10vw;
+        background-size: 60vh, 13vh;
+    }
+
+    .container__mensagem {
+        margin: 0 auto 15vh;
+        font-size: 18px;
+        line-height: 26px;
+        width: 50vw;
+    }
+
+}
